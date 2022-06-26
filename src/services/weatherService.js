@@ -1,10 +1,10 @@
 import { DateTime } from "luxon";
 
 
-const API_KEY = 'cc2df45724576975ef81dcdea77129f8';
+const API_KEY = 'YOUR_API_KEY';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
-/* https://api.openweathermap.org/data/2.5/weather?q=tokyo&appid=cc2df45724576975ef81dcdea77129f8
+/* https://api.openweathermap.org/data/2.5/weather?q=tokyo&appid=YOUR_API_KEY
 
 
 function to call API's
