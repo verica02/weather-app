@@ -3,28 +3,28 @@ import { iconUrlFromCode } from '../services/weatherService'
 
 function Forecast({title, items}) {
   return (
-    <div>
+    <div className = 'mt-64'>
 
 	<div className = 'flex items-center justify-start my-6'>
 
-	<p className = 'text-white font-medium uppercase'>{title}</p>
+	<p className = 'text-white text-2xl uppercase'>{title}</p>
 
 	</div>
 
-	<hr className = 'my-2'/>
+	<hr className = 'my-4'/>
 	<div className='flex flex-row items-center justify-between text-white'>
 	{items.map((item, index) => (
           <div
             key={index}
             className="flex flex-col items-center justify-center"
           >
-            <p className="font-light text-sm">{item.title}</p>
+            <p className="font-light text-xl">{item.title}</p>
             <img
               src={iconUrlFromCode(item.icon)}
               className="w-12 my-1"
               alt=""
             />
-            <p className="font-medium">{`${item.temp.toFixed()}°`}</p>
+            <p className="text-4xl">{`${item.temp.toFixed()}°`}</p>
           </div>
         ))}
 
