@@ -7,7 +7,7 @@ function TimeAndLocation({weather: {dt, timezone, name, country}}) {//destructur
 	<div className = 'flex items-center justify-center my-6'>
 		<p className = 'text-white text-2xl font-extralight'>{formatToLocalTime(dt, timezone)}</p>{/*fetches from aPI*/}
     	</div>
-    	<div className = 'flex items-center justify-center my-3'>
+    	<div className = 'flex items-center justify-center my-2 mb-1'>
 		<p className = 'text-white text-4xl font-medium'>{`${name}, ${country}`}</p>
     	</div>
     

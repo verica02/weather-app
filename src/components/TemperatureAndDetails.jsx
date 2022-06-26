@@ -17,7 +17,7 @@ function TemperatureAndDetails({weather: {//destructuring
 	details, icon, temp, temp_min, temp_max, speed, humidity,feels_like, timezone, sunrise, sunset
 }}) {
   return (
-    <div className='mt-16'>
+    <div className='mt-4'>
 
 		<div className = 'flex items-center justify-center py-6 text-3xl text-cyan-300 '>
 		
@@ -29,9 +29,9 @@ function TemperatureAndDetails({weather: {//destructuring
 		<div className = " flex flex-row items-center justify-between text-white py-3">
 		<img src = {iconUrlFromCode(icon)} alt = "" className = "w-40"/>
 		
-		<div>
-		<p className = 'text-8xl' >{`${temp.toFixed()}°`}</p>
-		<p>{details}</p>	
+		<div className = 'flex flex-col items-center'>
+		<p className = 'text-8xl mb-4' >{`${temp.toFixed()}°`}</p>
+		<p >{details}</p>	
 		</div>
 		
 
