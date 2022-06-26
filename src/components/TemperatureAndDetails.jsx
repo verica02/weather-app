@@ -31,7 +31,7 @@ function TemperatureAndDetails({weather: {//destructuring
 		
 		<div className = 'flex flex-col items-center'>
 		<p className = 'text-8xl mb-4' >{`${temp.toFixed()}°`}</p>
-		<p >{details}</p>	
+		<p className = "text-3xl">{details}</p>	
 		</div>
 		
 
